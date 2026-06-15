@@ -27,3 +27,69 @@ body {
     overflow-x: hidden;
     width: 100%;
 }
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-nav-glass);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-line-subtle);
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+}
+
+.brand-logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.logo {
+  text-decoration: none;
+  color: inherit;
+}
+
+.accent-char {
+    color: var(--color-primary-blue);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-link {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--color-text-white);
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    height: 2px;
+    background-color: var(--color-primary-blue);
+    border-radius: 2px;
+}
