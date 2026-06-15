@@ -274,3 +274,195 @@ body {
     border-radius: 50% 50% 0 0;
     border: 1px solid rgba(37, 117, 252, 0.2);
 }
+
+.block-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 14px;
+}
+
+.block-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-primary-blue);
+    border-radius: 2px;
+}
+
+.tech-wrapper {
+    padding: 90px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slider-viewport-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.slider-mask {
+    overflow: hidden;
+    width: 100%;
+    padding: 15px 5px;
+}
+
+.slider-rail {
+    display: flex;
+    list-style: none;
+    transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+    gap: 24px;
+}
+
+.tech-mega-card {
+    min-width: calc(33.333% - 16px);
+    background-color: var(--bg-card-dark);
+    border: 1px solid var(--border-line-subtle);
+    border-radius: 16px;
+    padding: 45px 30px;
+
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-mega-card:hover {
+    border-color: rgba(37, 117, 252, 0.5);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(37, 117, 252, 0.15);
+}
+
+.brand-icon-box {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 25px auto;
+    background-color: rgba(3, 8, 18, 0.6);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    font-size: 2.8rem;
+    transition: transform 0.3s ease;
+}
+
+.tech-mega-card:hover .brand-icon-box {
+    transform: scale(1.1);
+}
+
+.html-glow {
+    color: #E34F26;
+}
+
+.css-glow {
+    color: #1572B6;
+}
+
+.js-glow {
+    color: #F7DF1E;
+}
+
+.react-glow {
+    color: #61DAFB;
+}
+
+.git-glow {
+    color: #F05032;
+}
+
+.github-glow {
+    color: #ffffff;
+}
+
+.vercel-glow {
+    color: #000000;
+}
+
+.devtools-glow {
+    color: #535252;
+}
+
+.mobilefirst-glow {
+    color: #083e4e;
+}
+
+.modular-glow {
+    color: #056865;
+}
+
+.metodo-glow {
+    color: #520942;
+}
+
+.growth-glow {
+    color: #023d05;
+}
+
+
+.tech-mega-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.tech-mega-card p {
+    color: var(--color-text-desc);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.slider-control-btn {
+    background-color: rgba(8, 17, 37, 0.8);
+    border: 1px solid var(--border-line-subtle);
+    color: var(--color-text-muted);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+    flex-shrink: 0;
+}
+
+.slider-control-btn:hover {
+    background-color: var(--color-primary-blue);
+    color: var(--color-text-white);
+    border-color: var(--color-primary-blue);
+    transform: scale(1.05);
+}
+
+.slider-dots-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 35px;
+}
+
+.dot-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #122242;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dot-indicator.active {
+    background-color: var(--color-primary-blue);
+    transform: scale(1.2);
+}
