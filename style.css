@@ -1,0 +1,29 @@
+:root {
+    --bg-main-dark: #030812;
+    --bg-card-dark: #081125;
+    --bg-nav-glass: rgba(3, 8, 18, 0.9);
+    --color-primary-blue: #2575fc;
+    --color-text-white: #ffffff;
+    --color-text-muted: #8fa0bc;
+    --color-text-desc: #748aa7;
+    --glow-radial-effect: rgba(37, 117, 252, 0.18);
+    --border-line-subtle: #122242;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-main-dark);
+    color: var(--color-text-white);
+    overflow-x: hidden;
+    width: 100%;
+}
